@@ -1,0 +1,3 @@
+rm -rf image_frames 2> /dev/null
+mkdir image_frames
+python3 src/video.to.image.frames.py "$@"

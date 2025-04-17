@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [[ -z "$1" ]]; then
+    echo ""
+    echo "No duration provided. Using default duration of 100ms per frame."
+    echo ""
+    echo "You can also specify the duration in milliseconds like this:"
+    echo ""
+    echo "   ./step.3.convert.image.frames.to.gif <duration_in_ms>"
+    echo ""
+    echo "Example:"
+    echo "   ./step.3.convert.image.frames.to.gif 500"
+    echo "   (Each frame will be shown for 500 milliseconds)"
+    echo ""
+    python3 src/image.frames.to.gif.py -d image_frames
+else
+    python3 src/image.frames.to.gif.py -d image_frames -i "$1"
+fi
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 
+echo 
+echo "1. Go to the folder 'image_frames'" 
+echo "2. Delete the image frames you 'don’t like' or 'don’t want' as part of the final ( animation.gif ) file. "
+echo "3. Keep only the images you want  in the animation ( animation.gif )."
+echo "4. Finally run './step.3.convert.image.frames.to.gif' to generate gif animation file" 
+echo 
+echo 
